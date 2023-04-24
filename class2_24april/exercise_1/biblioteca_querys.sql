@@ -29,7 +29,7 @@ INNER JOIN  biblioteca.libro_autor ON autor.IdAutor = libro_autor.IdAutor
 INNER JOIN  biblioteca.libro ON libro_autor.IdLibro = libro.IdLibro
 WHERE libro.titulo = 'Sherlock Holmes';
 
-#10 ¿Qué libros se prestaron al lector “Lorena Perez”? 
+#10 ¿Qué libros se prestaron al lector “Lorena Perez”? CORREGIR!!!!!!!
 SELECT libro.titulo, estudiante.nombre
 FROM biblioteca.libro
 INNER JOIN biblioteca.prestamo ON libro.idLibro = prestamo.idLibro
